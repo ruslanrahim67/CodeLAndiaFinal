@@ -1,0 +1,70 @@
+
+.header-top {
+    
+    @include flex($direction:row, $justify:space-between,$align:center );
+    background-color: azure;
+
+    @include responsive-tablet(){
+        .header-top-text{
+            display: none
+        }
+
+        .header-top-left{
+            display: grid
+            grid-template-columns auto auto auto auto;
+            
+        }
+
+        .header-top-right{
+            display: grid
+            grid-template-columns auto auto auto auto;
+        }
+    }
+
+}
+
+.header-top-left{
+    @include flex();
+    @include li();
+    @include a-tag();
+   
+}
+
+.header-top-right{
+    @include flex();
+    @include li();
+    @include a-tag();
+}
+
+.header-top-right{
+& .lang{
+    position: relative;
+
+    &:hover .lang-dpDown{
+        display: block;
+    }
+}
+& .lang-dpDown{
+    position: absolute;
+    display: none; 
+    left: -20px;
+
+}
+
+& .valyuta{
+    position: relative;
+
+    &:hover .valyuta-dpDown{
+        display: block;
+
+    }
+}
+& .valyuta-dpDown{
+    position: absolute;
+    display: none; 
+    left: -20px;  
+}
+
+}
+
+

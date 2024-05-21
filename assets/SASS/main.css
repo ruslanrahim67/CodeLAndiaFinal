@@ -1,0 +1,67 @@
+.header-top {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: azure;
+}
+@media only screen and (max-width: 990px) {
+  .header-top .header-top-text {
+    display: none;
+  }
+  .header-top .header-top-left {
+    display: grid grid-template-columns auto auto auto auto;
+  }
+  .header-top .header-top-right {
+    display: grid grid-template-columns auto auto auto auto;
+  }
+}
+
+.header-top-left {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: stretch;
+  list-style: none;
+  gap: 2vw;
+}
+.header-top-left a {
+  text-decoration: none;
+  color: black;
+}
+
+.header-top-right {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: stretch;
+  list-style: none;
+  gap: 2vw;
+}
+.header-top-right a {
+  text-decoration: none;
+  color: black;
+}
+
+.header-top-right .lang {
+  position: relative;
+}
+.header-top-right .lang:hover .lang-dpDown {
+  display: block;
+}
+.header-top-right .lang-dpDown {
+  position: absolute;
+  display: none;
+  left: -20px;
+}
+.header-top-right .valyuta {
+  position: relative;
+}
+.header-top-right .valyuta:hover .valyuta-dpDown {
+  display: block;
+}
+.header-top-right .valyuta-dpDown {
+  position: absolute;
+  display: none;
+  left: -20px;
+}/*# sourceMappingURL=main.css.map */
